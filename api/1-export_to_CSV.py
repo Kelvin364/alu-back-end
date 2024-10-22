@@ -4,9 +4,10 @@ Fetches data from an API
 and returns information about the employee's todo list progress
 """
 
+import csv
 import requests
 from sys import argv
-import csv
+
 
 if __name__ == '__main__':
     userId = argv[1]
