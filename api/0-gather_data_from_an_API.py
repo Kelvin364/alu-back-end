@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-import requests
-import sys
 """
 This script fetches employee data from a public API (jsonplaceholder.typicode.com)
 and displays their completed tasks.
 
 Usage: python script.py <Employee_id>
 """
+import requests
+import sys
+
 def main(Employee_id):
     response_user = requests.get(f'https://jsonplaceholder.typicode.com/users/{Employee_id}')
 
@@ -29,7 +30,7 @@ def main(Employee_id):
             print(f"\t {task['title']}")
     else:
         print("URL input error for todos")
-        sys.exit(1)  # Exit if we can't fetch the todos data
+        sys.exit(1) 
 
 
 if __name__ == "__main__":
