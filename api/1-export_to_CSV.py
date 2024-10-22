@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Fetches data from an API
-and returns information about the employee's todo list progress
+and returns information about the employee's todo list progress and converts it into a csv file
 """
 
 import csv
