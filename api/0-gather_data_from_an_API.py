@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 import requests
 import sys
-
+"""
+Fetches data from an API
+and returns information about the employee's todo list progress
+"""
 def main(Employee_id):
     response_user = requests.get(f'https://jsonplaceholder.typicode.com/users/{Employee_id}')
 
