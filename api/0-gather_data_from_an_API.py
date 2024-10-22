@@ -2,8 +2,10 @@
 import requests
 import sys
 """
-Fetches data from an API
-and returns information about the employee's todo list progress
+This script fetches employee data from a public API (jsonplaceholder.typicode.com)
+and displays their completed tasks.
+
+Usage: python script.py <Employee_id>
 """
 def main(Employee_id):
     response_user = requests.get(f'https://jsonplaceholder.typicode.com/users/{Employee_id}')
