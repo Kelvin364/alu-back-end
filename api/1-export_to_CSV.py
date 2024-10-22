@@ -27,12 +27,12 @@ if __name__ == '__main__':
     [print("\t " + task["title"]) for task in task_completed]
 
 
-    with open('USER_ID.CSV', mode='w',newline='') as file:
-        writer = csv.writer(file)
-
-        writer.writerow(todos_info[0].keys())
-
-        for item in todos_info:
-            writer.writerow(item.values())
-
-    
+with open("USER_ID.csv", mode='w', newline='') as file:
+    writer = csv.writer(file)
+    # Write the header
+    writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS",
+                     "TASK_TITLE"])
+    # Write task rows
+    for task in todos_info:
+        writer.writerow([userId, employee_name, task["completed"],
+                         task["title"]])
