@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-# Fetching API data and exporting user_info in a user.json file
+"""
+This script fetches data from a REST API for a given user ID,
+and exports the user's list information to a JSON file.
+"""
+
 import json
 import requests
 from sys import argv
