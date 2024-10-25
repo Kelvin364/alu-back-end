@@ -1,9 +1,8 @@
 #!/usr/bin/python3
+# Fetching API data and exporting user_info in a user.json file
 import json
 import requests
 from sys import argv
-
-# Fetching API data and exporting user_info in a user.json file
 
 if __name__ == '__main__':
     # Mapping the URLs-endpoints and using the GET method
