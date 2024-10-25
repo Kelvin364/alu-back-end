@@ -3,13 +3,12 @@ import json
 import requests
 from sys import argv
 
-# Fetching API data and exporting user_info in a user.json file 
+# Fetching API data and exporting user_info in a user.json file
 
 if __name__ == '__main__':
     # Mapping the URLs-endpoints and using the GET method
     user_id = argv[1]
     base_url = "https://jsonplaceholder.typicode.com/"
-    
     # Fetch user data
     user_data = requests.get(f"{base_url}users/{user_id}")
     todos_data = requests.get(f"{base_url}todos?userId={user_id}")
